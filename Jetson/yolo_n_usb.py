@@ -53,8 +53,8 @@ while cap.isOpened():
         frame_count = 0
         start_time = time.time()
 
-        # Display FPS on the frame
-        cv2.putText(annotated_frame, f'FPS: {fps:.2f}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    # Display FPS on the frame
+    cv2.putText(annotated_frame, f'FPS: {fps:.2f}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     # Show the output with FPS displayed
     cv2.imshow("YOLOv8 Detection with FPS", annotated_frame)
